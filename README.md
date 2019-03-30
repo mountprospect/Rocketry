@@ -13,6 +13,8 @@
   - March 30th, 2019 update: Wilco Version 0.1:
     - Includes Version designation and number in program header
     - Deletes comments from testing in `void loop()`
+    - Deleted comments in function definitions
+    - Reformatted spacing
     - Prayuj helped simplify `terminalCount()` switch statement into pair of conditional statements
     - TODO: Make function with seven arguments for `showNumber()` switch statement
     
