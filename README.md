@@ -1,7 +1,7 @@
 # Rocketry
-- Repository for avionics and pad software
-- ***Wilco***: Pad software series: Version 0.0 - Commited on March 20th, 2019 
-- Supported Pads:
+- Repository for rocket avionics and launchpad software
+- ***Wilco***: Launchpad software series: Version 0.0 - Commited on March 20th, 2019 
+- Supported Launchpads:
   - *Pad V1.0*
 - **Changelog:**
   - March 30th, 2019 update: Wilco Version 0.1:
