@@ -18,8 +18,7 @@
     
 #### ***Soar***: Rocket avionics software series: Version 0.0 not developed as of March 30th, 2019
 - Based on: *Arduino Nano*
-- Components: 
-  - 
+- Components:
   - Power Supply: 
 - Supported Rockets:
   - *Alpha V1.0*
