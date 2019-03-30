@@ -9,7 +9,7 @@
   - Power Supply: 9V battery **or** 8 AA batteries
 - Supported Launchpads:
   - *Pad V1.0*
-#####**Changelog:**
+##### **Changelog:**
   - March 30th, 2019 update: Wilco Version 0.1:
     - Includes Version designation and number in program header
     - Deletes comments from testing in `void loop()`
@@ -23,4 +23,4 @@
   - Power Supply: 
 - Supported Rockets:
   - *Alpha V1.0*
-#####**Changelog:**
+##### **Changelog:** 
