@@ -3,13 +3,12 @@
    Wilco Version 0.1
    Date: 3/30/19, 4:09 PM @AMRoC For TDT
 */
+
 #include <Servo.h>
 
 Servo rightServo;
 Servo leftServo;
   
-//SERVO MAX = 150
-
 int redStrobePin = A5;
 int strongbackLEDPin = A4;
 int piezoPin = 8;
@@ -59,8 +58,8 @@ void testServos() {
   delay(500);
   moveLeftServo(140, 20, 50);
   delay(500);
-//  setServos();
 }
+
 void startup() {
   for (int i = 0; i < 3; i++) strobe();
   flashAllStrongback(500, 3);
@@ -80,8 +79,6 @@ void startup() {
   delay(1000);
   allStrongback(true);
   delay(1000);
-//  allStrongback(false);
-//  digitalWrite(redStrobePin, LOW);
   setServos();
   delay(1500);
   showNumber(8);
