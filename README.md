@@ -10,7 +10,7 @@
     - Prayuj helped simplify `terminalCount()` switch statement into pair of conditional statements
     - TODO: Make function with seven arguments for `showNumber()` switch statement
     
-- ***Soar***: Rocket avionics software series: Version 0.0 not developed as of March 29th, 2019
+- ***Soar***: Rocket avionics software series: Version 0.0 not developed as of March 30th, 2019
 - Supported Rockets:
   - *Alpha V1.0*
 - **Changelog:**
