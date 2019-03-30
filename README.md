@@ -3,7 +3,7 @@
 - ***Wilco***: Pad software series: Version 0.0 - Commited on March 20th, 2019 
 - Supported Pads:
   - *Pad V1.0*
-- **_Changelog:_**
+- **__Changelog:__**
   - March 30th, 2019 update: Wilco Version 0.1:
     - Includes Version designation and number in program header
     - Deletes comments from testing in `void loop()`
