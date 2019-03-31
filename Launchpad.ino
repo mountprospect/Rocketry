@@ -1,14 +1,15 @@
 /*
    Author: Maalv
-   Wilco Version 0.1
-   Date: 3/30/19, 4:09 PM @AMRoC For TDT
+   Wilco Version 0.0
+   Date: 3/17/19, 7:51 PM
 */
-
 #include <Servo.h>
 
 Servo rightServo;
 Servo leftServo;
   
+//SERVO MAX = 150
+
 int redStrobePin = A5;
 int strongbackLEDPin = A4;
 int piezoPin = 8;
@@ -58,8 +59,8 @@ void testServos() {
   delay(500);
   moveLeftServo(140, 20, 50);
   delay(500);
+//  setServos();
 }
-
 void startup() {
   for (int i = 0; i < 3; i++) strobe();
   flashAllStrongback(500, 3);
@@ -79,6 +80,8 @@ void startup() {
   delay(1000);
   allStrongback(true);
   delay(1000);
+//  allStrongback(false);
+//  digitalWrite(redStrobePin, LOW);
   setServos();
   delay(1500);
   showNumber(8);
@@ -133,9 +136,61 @@ void testPiezo() {
 
 void terminalCount() { //IF SERVOS CANT MOVe,  STOP - USE SERVO.READ?
   for (int i = 0; i <= 15; i++) {
-     showNumber(15 - i);
-     if (i == 9) moveLeftServo(60, 20, 150);
-     if (i == 8) moveLeftServo(120, 20, 150);
+    switch (i) {
+      case 0: 
+        showNumber(15);
+        break;
+      case 1:   
+        showNumber(14);
+        break;
+      case 2: 
+        showNumber(13);  
+          break;
+      case 3: 
+        showNumber(12);
+        break;
+      case 4: 
+        showNumber(11);
+        break;
+      case 5: 
+        showNumber(10);
+        break;
+      case 6: 
+        showNumber(9);
+        break;
+      case 7: 
+        showNumber(8);
+        break;
+      case 8: 
+        showNumber(7);
+//        leftServo.detach();
+        break;
+      case 9: 
+        showNumber(6);
+        moveRightServo(60, 20, 150);
+        break;
+      case 10: 
+        showNumber(5);
+        moveLeftServo(120, 20, 150);
+        break;
+      case 11: 
+        showNumber(4);
+        break;
+      case 12: 
+        showNumber(3);
+        break;
+      case 13: 
+        showNumber(2);
+        break;
+      case 14: 
+        showNumber(1);
+        break;
+      case 15: 
+        showNumber(0);
+        break;
+      default: 
+        showNumber(-1);
+        break;
     }
     digitalWrite(redStrobePin, HIGH);
     digitalWrite(strongbackLEDPin, HIGH);
@@ -335,10 +390,59 @@ void setup() {
 }
 // EW, PRAYUJ - 3-19-19 (in response to him saying "Ew, Arduino") when i sent him snap of my code
 void loop() {
+  //  digitalWrite(redStrobePin, HIGH);
+  //  digitalWrite(strongbackLEDPin, HIGH);
+  //  delay(250);
+  //  tone(piezoPin, piezoFreq, 500); //(pin, frequency, time)
+  //  delay(piezoFreq);
+  //  digitalWrite(redStrobePin, LOW);
+  //  digitalWrite(strongbackLEDPin, LOW);
+  //  noTone(piezoPin);
+  //  delay(1000);
+//  digitalWrite(a, HIGH);
+//  digitalWrite(b, HIGH);
+//  digitalWrite(c, HIGH);
+//  digitalWrite(d, HIGH);
+//  digitalWrite(e, HIGH);
+//  digitalWrite(f, HIGH);
+//  digitalWrite(g, HIGH);
+//  Serial.println(leftServo.read());
+//  leftServo.write(0);
+//  delay(2500);
+
+//for (int i = 0; i < 180; i+=2) {
+//  rightServo.write(i);
+//  leftServo.write(abs(i-180));
+//  delay(25);
+//  
+//}
+//delay(2000);
+//testServos();
+//delay(2000);
   startup();
+//setServos();
+////delay(5000);
+//rightServo.attach(9);
+//
+// rightServo.write(180);
+// delay(5000);
+//// rightServo.write(60);
+// 
+//        moveRightServo(60, 20, 150);
+//////        moveLeftServo(120, 20, 150);
+//        delay(5000);
+////  setServos();
   padIdle();
+//////digitalWrite(3, HIGH);
+////delay(5000);
+//////digitalWrite(3, LOW);
+//////strobe();
   terminalCount();
   postLaunch();
   while(true) { }
+//  for (int i = 0; i <= 16; i++) {
+//  showNumber(i); 
+//  delay(1000);}
+//showNumber(3);
 }
 
