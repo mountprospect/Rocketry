@@ -1,5 +1,15 @@
 # Rocketry
 ### Repository for rocket avionics and launchpad software
+
+#### Rockets:
+  - Alpha V1.0
+  
+#### Launchpads:
+  - Pad V1.0
+  
+#### *Pulse* Flight Computer: Supported Rockets:
+  - Alpha V1.0
+  
 #### ***Wilco***: Launchpad software series: Version 0.0 - Commited on March 20th, 2019 
 - Based on: *Arduino Uno R3*
 - Components (quantity):
@@ -24,4 +34,5 @@
   - Power Supply: 
 - Supported Rockets:
   - *Alpha V1.0*
+- Supported Flight
 ##### **Changelog:** 
