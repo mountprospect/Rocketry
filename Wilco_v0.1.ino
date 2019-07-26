@@ -135,7 +135,7 @@ void terminalCount() { //IF SERVOS CANT MOVe,  STOP - USE SERVO.READ?
     showNumber(15 - i);
     if (i == 9) moveRightServo(60, 20, 150);
     if (i == 8) moveLeftServo(120, 20, 150);
-    }
+//    }
     digitalWrite(redStrobePin, HIGH);
     digitalWrite(strongbackLEDPin, HIGH);
     delay(250);
@@ -146,8 +146,8 @@ void terminalCount() { //IF SERVOS CANT MOVe,  STOP - USE SERVO.READ?
     noTone(piezoPin);
     delay(500);
   }
-  ignite();
-  flashAllStrongback(125, 5);
+//  ignite();
+//  flashAllStrongback(125, 5);
 }
 
 void postLaunch() {
